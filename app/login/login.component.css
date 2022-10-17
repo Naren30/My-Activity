@@ -1,0 +1,99 @@
+.login{
+    margin-top: 0px;
+    margin-bottom: 450px;
+}
+
+.uname{
+    margin-bottom: 5px;
+}
+
+.footer{
+padding: 0;
+margin: 0;
+}     
+.title{
+    /* background-image: url('src\assets\Images\a0f51390-29b4-447a-a8f7-a4538b2f5abc.jpg');
+    background-size: cover; */
+    padding: auto;
+   }
+  .logo1{
+      text-align: center;
+  } 
+  .footer{
+    background-color: rgb(33 37 41);
+}
+.footer > ul > li{
+    list-style-type: none;
+}
+.icon{
+    display: inline;
+   align-items: center;
+    
+}
+.icon >a{
+    color: white;
+}
+.ico{
+    width: 30px;
+    height: 46px;
+    
+}
+.copy{
+    color: white;
+}
+.home-page{
+    background-color: rgb(33 37 41);
+    text-align: center;
+}
+.card{
+    padding:16px;
+}
+.lin:hover{
+    background-color: orange;
+}
+.lab{
+    float: left;
+    margin-bottom: 10px;
+}
+.fon{
+    font-size: large;
+    font-weight: bold;
+}
+.row{
+   padding: 20px;
+}
+
+.link {
+
+    margin: 3px 0;
+
+    /* text-align: center; */
+
+    font-size: 16px;
+    
+    color: #504e4e;
+
+  }
+
+  .link a{
+
+    color: #2691d9;
+    text-decoration: none; 
+
+  }
+  .link a:hover{
+      color: blue;
+      text-decoration: underline;
+  }
+.forget a{
+    text-decoration: none; 
+}
+ .forget a:hover{
+     color: #fc0b0b;
+ }
+ .uname:hover{
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+ }
+ .pname:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }

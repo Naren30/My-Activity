@@ -1,0 +1,43 @@
+
+  .heading {
+    font-size: 25px;
+    margin-right: 25px;
+  }
+  
+  .fa {
+    font-size: 20px;
+  }
+  
+  .checked {
+    color:gold;
+  }
+  .btn{
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color:rgb(50, 177, 228);
+    color: white;
+    font-size: 16px;
+    padding: 16px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 50px;
+  }
+  .heading{
+    text-align: center;
+    font-style: Sans-serif;
+}
+.card{
+  padding: 4px;
+}
+
+.card-text{
+  text-align: justify;
+  font-weight: bold;
+  font-style: Sans-serif;
+  text-align: center;
+}
+.checked {
+  color: gold;
+}
