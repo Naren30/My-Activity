@@ -1,9 +1,0 @@
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-    margin-top: 0;
-    margin-bottom: 0rem;
-    font-weight: 500;
-    line-height: 1.25;
-}
-.bg-light{
-    box-shadow: 0 0px 10px 0 rgb(0 0 1);
-}
