@@ -8,8 +8,16 @@ import { Component, OnInit } from '@angular/core';
 export class ShimlaComponent implements OnInit {
 
   constructor() { }
-
+  value:number=15000;
   ngOnInit(): void {
   }
-
+  increase(){
+    this.value+=8000;
+  }
+  decrease(){
+    if(this.value<=8000){}
+    else{
+      this.value-=8000;
+    }
+  }
 }

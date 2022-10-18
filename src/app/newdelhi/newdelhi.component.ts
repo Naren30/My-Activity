@@ -15,9 +15,17 @@ export class NewdelhiComponent implements OnInit {
     config.pauseOnHover = false;
   }
 
- 
+ value:number=8000;
 
   ngOnInit(): void {
   }
-
+increase(){
+  this.value+=8000;
+}
+decrease(){
+  if(this.value<=8000){}
+  else{
+    this.value-=8000;
+  }
+}
 }

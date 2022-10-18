@@ -8,13 +8,22 @@ import { Component, OnInit } from '@angular/core';
 export class TamilnaduComponent implements OnInit {
 
   constructor() { }
-
+  value:number=15000;
   ngOnInit(): void {
   }
   searchText : string='';
   onSearchTextEntered(searchValue:string){
     this.searchText=searchValue;
     console.log(this.searchText);
+  }
+  increase(){
+    this.value+=8000;
+  }
+  decrease(){
+    if(this.value<=8000){}
+    else{
+      this.value-=8000;
+    }
   }
 courses=[
   {id:101,name:'Kodaikanal',author:'jhon heikela',duration:48,type:'free',
