@@ -1,0 +1,63 @@
+pipeline{
+
+    agent any
+
+stages
+
+{
+
+  stage('Checkout Source') {
+
+      steps {
+
+        git 'https://github.com/Naren30/My-Activity.git'
+
+      }
+
+  }
+
+  stage("Docker_login_yarn")
+
+  {
+
+    steps {
+
+        script {
+
+
+
+            sh "docker login -u naren3071 -p narendrankumar3071"
+
+    }    
+
+}
+
+}
+
+stage("image: Customer app")
+
+{
+
+    steps {
+
+        sh "docker build -t naren3071/angularproject -f devops/dockerfile ."
+
+    }
+
+}
+
+stage("image:push")
+
+{
+
+    steps {
+
+         sh "docker push naren3071/angularproject:latest"
+
+            }
+
+}
+
+}
+
+}
