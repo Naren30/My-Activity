@@ -7,5 +7,5 @@ COPY . .
 RUN npm run build
 ### STAGE 2: Run ###
 FROM nginx:latest
-COPY --from=build /usr/local/app/dist/ usr/share/nginx/html
+COPY --from=build /usr/local/app/ usr/share/nginx/html
 EXPOSE 80
