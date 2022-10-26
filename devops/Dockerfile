@@ -7,5 +7,5 @@ COPY . .
 RUN npm run build
 ### STAGE 2: Run ###
 FROM nginx:latest
-COPY nginx.conf /etc/nginx/nginx.conf
+COPY --from=build /usr/local/app/dist/ usr/share/nginx/html
 EXPOSE 80
