@@ -30,7 +30,7 @@ stage("image: Customer app")
 
     steps {
 
-        sh "docker build -t naren3071/angularproject -f devops/dockerfile ."
+        sh "docker build -t naren3071/angularproject -f devops/Dockerfile ."
 
     }
 
