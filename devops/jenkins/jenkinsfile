@@ -6,16 +6,6 @@ stages
 
 {
 
-  stage('Checkout Source') {
-
-      steps {
-
-        git 'https://github.com/Naren30/My-Activity.git'
-
-      }
-
-  }
-
   stage("Docker_login_yarn")
 
   {
