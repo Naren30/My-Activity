@@ -6,7 +6,7 @@ RUN npm install
 COPY . .
 RUN npm run build
 # 2. Deploy our Angular app to NGINX
-FROM nginx:alpine
+FROM nginx:latest
 
 ## Replace the default nginx index page with our Angular app
 RUN rm -rf /usr/share/nginx/html/*
