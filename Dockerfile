@@ -1,14 +1,10 @@
-# 1. Build our Angular app
-FROM node:16.17.0-alpine as builder
-
-WORKDIR /app
+### STAGE 1: Build ###
+FROM node:16.17.0-alpine AS build
+WORKDIR /usr/src/app
 COPY package.json package-lock.json ./
-ENV CI=1
-RUN npm ci
-
+RUN npm install
 COPY . .
-RUN npm run build -- --prod --output-path=/dist
-
+RUN npm run build
 # 2. Deploy our Angular app to NGINX
 FROM nginx:alpine
 
